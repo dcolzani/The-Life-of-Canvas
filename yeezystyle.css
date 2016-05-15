@@ -1,0 +1,207 @@
+* {margin: 0; padding: 0;}
+
+html {
+
+}
+
+body {
+    background: url(kanyebg.png) no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    color: #d1dad9;
+}
+
+#pablo {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hide {
+    opacity: 0;
+    height: 0;
+    transition: all ease .1s;
+    z-index: -999;
+    visibility: hidden;
+    margin-top: 0!important;
+}
+
+.background {
+    background: #EDEDF2;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+#thewaveishere {
+    transition: all ease 2.5s;
+    color: #6C788E;
+    font-weight: bold;
+}
+
+#introText {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10%;
+    color: #fff;
+}
+
+#yeezy {
+    margin: 0 auto;
+    padding: 10px 35px;
+    font-weight: bold;
+    background: #FCFDFF;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* canvas styles */
+
+section {
+    padding: 20px 0 20px 0;
+}
+
+canvas {
+    border: 1px solid black;
+    display: block;
+    /*margin: 100px auto 0px; this breaks resizing the browser mid draw */
+    border-image-source: url(frame.png);
+    border-image-slice: 154;
+    border-image-width: 115px;
+    border-image-outset: 90;
+    box-sizing: border-box;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#tools {
+    margin-bottom: 100px;
+}
+
+#drawingTools {
+    width: 800px;
+    height: 135px;
+    margin: 0px auto;
+}
+
+#colors {
+    width: 10%;
+}
+
+#colors button {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid rgba(0,0,0,0.6);
+}
+
+#colors button:hover {
+    opacity: 0.6;
+}
+
+#black {background: black;}
+#white {background: white;}
+#yellow {background: #F9F281;}
+#orange {background: #F09018;}
+#red {background: #F04848;}
+#purple {background: #56416C;}
+#blue {background: #18A8F0;}
+#green {background: #3EAF83;}
+#green1 {background: #ADDB58;}
+
+
+#brushTools button {
+    width: 20px;
+    height: 20px;
+}
+
+#brushTools button:hover {
+    opacity: 0.6;
+}
+
+#brushTools button:nth-child(2) {
+    background: url(pencil.png);
+    width: 28px;
+    height: 28px;
+}
+
+#brushTools button:nth-child(3) {
+    background: url(brush.png);
+    width: 28px;
+    height: 28px;
+}
+
+#brushSizes {
+    width: 100%;
+    height: 50px;
+}
+
+#brushSizes button {
+    width: 15px;
+    height: 15px;
+    margin: 5px 3px 0 3px;
+    background: #303030;
+    color: white;
+    float: left;
+    cursor: pointer;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+}
+
+#brushSizes button:hover {
+    opacity: 0.6;
+}
+
+#brushSizes button:nth-child(2) {
+    width: 15px;
+}
+
+#brushSizes button:nth-child(3) {
+    width: 18px;
+    height: 18px;
+}
+
+#brushSizes button:nth-child(4) {
+    width: 21px;
+    height: 21px;
+}
+
+#brushSizes button:nth-child(5) {
+    width: 24px;
+    height: 24px;
+}
+
+#otherTools button:hover {
+    opacity: 0.6;
+}
+
+#otherTools button:nth-child(2) {
+    background: url(trashicon.png);
+    height: 28px;
+    width: 28px;
+}
+
+#otherTools button:nth-child(3) {
+    background: url(painticon.png);
+    height: 28px;
+    width: 28px;
+}
+
+
+#clearCanvas { font: 25px sans-serif; }
+#brushSize1 { font: 10px impact; }
+#brushSize2 { font: 20px impact; }
+#brushSize3 { font: 30px impact; }
+#brushSize4 { font: 40px impact; }
+#fillCanvas { font: 25px sans-serif; }
+#buttBrush, #squareBrush, #roundBrush { font: 18px sans-serif; }

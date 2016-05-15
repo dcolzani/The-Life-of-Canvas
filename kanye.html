@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<title>Yeezus commands you</title>
+    <link rel="stylesheet" type="text/css" href="yeezystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="pablo">
+<div id="introText">
+<h1>Kanye West is angry with you. The art God demands creativity and you've been uninspired lately.</h1>
+<h3>You look up to Kanye and ask, "Kanye, what can I do to lighten the mood?"</h3>
+<h3>"I'm gonna give you the materials you need to make my next album cover. Keep it wavy and you can keep your soul."</h3>
+<button id="yeezy">I'm ready, give me my tools.</button>
+</div>
+<section id="thewaveishere" class="hide">
+  <div id="drawingTools">
+    <div id="tools">
+      <div id="colors">
+          <button id="black" onclick="changeColor('black')"></button>
+          <button id="white" onclick="changeColor('white')"></button>
+          <button id="yellow" onclick="changeColor('#F9F281')"></button><!--yellow-->
+          <button id="orange" onclick="changeColor('#F09018')"></button><!--orange-->
+          <button id="red" onclick="changeColor('#F04848')"></button><!--red-->
+          <button id="purple" onclick="changeColor('#56416C')"></button><!--purp-->
+          <button id="blue" onclick="changeColor('#18A8F0')"></button><!--blue-->
+          <button id="green" onclick="changeColor('#3EAF83')"></button><!--green-->
+          <button id="green1" onclick="changeColor('#ADDB58')"></button><!--green1-->
+
+      </div>
+      <div id="brushTools">
+          <p>Brush styles</p>
+          <button id="squareBrush" onclick="changeBrushStyle('butt')"></button>
+          <button id="roundBrush" onclick="changeBrushStyle('round')"></button>
+      </div>
+      <div id="brushSizes">
+          <p>Brush sizes</p>
+          <button id="brushSize1" onclick="changeBrushSize(5)"></button>
+          <button id="brushSize2" onclick="changeBrushSize(20)"></button>
+          <button id="brushSize3" onclick="changeBrushSize(30)"></button>
+          <button id="brushSize4" onclick="changeBrushSize(40)"></button>
+      </div>
+
+      <div id="otherTools">
+          <p>Tools</p>
+          <button id="clearCanvas" onclick="clearCanvas()"></button>
+          <button id="fillCanvas" onclick="fillCanvas()"></button>
+      </div>
+    </div><!--end tools-->
+      <!--<img class="frame" src="frame.png" />-->
+      <div id="canvasFrame">
+        <canvas id="canvas" width="800" height="500"></canvas>
+      </div>
+  </div><!--end drawingTools-->
+</section>
+</div><!--end of pablo-->
+    <script>
+    $('#yeezy').on('click', function() {
+        $('#thewaveishere').removeClass('hide');;
+        $('#introText').addClass('hide');
+        $('body').addClass('background');
+    });
+    </script>
+    <script src="yeezy.js"></script>
+</body>
+</html>

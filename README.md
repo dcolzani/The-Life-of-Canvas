@@ -1,3 +1,3 @@
-# kanye-canvas
-impress Kanye with your drawing skills
-don't make him mad and keep it wavy just be loopy
+The Life of Canvas
+
+This was an excuse for me to play around with HTML canvas. Yeezy taught me well.

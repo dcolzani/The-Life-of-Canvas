@@ -1,6 +1,9 @@
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 context.lineWidth = 2;
+context.fillStyle="#fff";
+context.rect(0,0,800,500);
+context.fill();
 var down = false;
 
 canvas.addEventListener('mousemove', draw);
